@@ -1,0 +1,128 @@
+{
+  "name": "AspireDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "pods": "(cd ios && pod install)"
+  },
+  "dependencies": {
+    "@dudigital/react-native-zoomable-view": "^1.0.15",
+    "@react-native-community/art": "^1.2.0",
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/blur": "^3.4.1",
+    "@react-native-community/checkbox": "^0.3.0",
+    "@react-native-community/masked-view": "^0.1.6",
+    "@react-native-community/toolbar-android": "^0.1.0-rc.2",
+    "@react-native-picker/picker": "^1.9.3",
+    "@react-navigation/bottom-tabs": "^5.0.7",
+    "@react-navigation/native": "^5.0.7",
+    "@react-navigation/stack": "^5.0.9",
+    "detox": "^18.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "lodash": "^4.17.15",
+    "lottie-ios": "^2.5.3",
+    "lottie-react-native": "^2.5.11",
+    "mobx": "^5.15.4",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^6.1.8",
+    "moment": "^2.24.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-actionsheet": "^2.4.2",
+    "react-native-animatable": "^1.3.3",
+    "react-native-circular-progress": "^1.3.6",
+    "react-native-elements": "^1.2.7",
+    "react-native-exception-handler": "^2.10.8",
+    "react-native-gesture-handler": "^1.6.0",
+    "react-native-i18n": "^2.0.15",
+    "react-native-keyboard-aware-scroll-view": "^0.9.1",
+    "react-native-reanimated": "^1.7.0",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-screens": "^2.0.0-beta.13",
+    "react-native-svg": "^12.1.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "snapshot-diff": "^0.8.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.16.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "husky": "^4.3.6",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.2.11",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "prettier-eslint": "^12.0.0",
+    "react-test-renderer": "^17.0.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/test_setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "roots": [
+      "./",
+      "./src"
+    ],
+    "moduleNameMapper": {
+      ".+\\.(gif|png|jpg|ttf)$": "identity-obj-proxy"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts|tsx|js|jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.debug": {
+        "binaryPath": "./ios/build/Build/Products/Debug-iphonesimulator/AspireDemo.app",
+        "build": "xcodebuild -workspace ios/AspireDemo.xcworkspace -configuration debug -scheme AspireDemo -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      }
+    }
+  }
+}

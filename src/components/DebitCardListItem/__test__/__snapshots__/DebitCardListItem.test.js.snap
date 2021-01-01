@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DebitCardListItem should render DebitCardListItem 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "flexDirection": "row",
+      "marginBottom": 32,
+      "marginHorizontal": 24,
+    }
+  }
+>
+  <AspireImage
+    source={null}
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "marginLeft": 12,
+      }
+    }
+  >
+    <AspireText
+      color="#25345F"
+      size={14}
+      text="DebitCardListItem"
+    />
+    <AspireText
+      color="#22222266"
+      size={13}
+      text="DebitCardListItem"
+      textStyle={
+        Object {
+          "height": 35,
+        }
+      }
+    />
+  </View>
+</ForwardRef>
+`;

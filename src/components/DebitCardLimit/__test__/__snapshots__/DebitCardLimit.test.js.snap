@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DebitCardLimit should render DebitCardLimit 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 26,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 6,
+      }
+    }
+  >
+    <AspireText
+      color="#222222"
+      size={13}
+      text="Debit card spending limit"
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <AspireText
+        color="#01D167"
+        size={13}
+        text="$100"
+      />
+      <AspireText
+        color="#22222233"
+        size={13}
+        text="|"
+        textStyle={
+          Object {
+            "marginHorizontal": 5,
+          }
+        }
+      />
+      <AspireText
+        color="#22222233"
+        size={13}
+        text="$200"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#01D1671A",
+        "borderRadius": 7.5,
+        "height": 15,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <Svg
+      height="100%"
+      onLayout={[Function]}
+      preserveAspectRatio="xMidYMid meet"
+      width="100%"
+    >
+      <Polygon
+        fill="#01D167"
+        points="0,0 0,0 0,15 0,15"
+      />
+    </Svg>
+  </View>
+</View>
+`;

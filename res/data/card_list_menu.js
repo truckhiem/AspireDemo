@@ -1,0 +1,40 @@
+export const CARD_LIST_MENU = [
+  {
+    icon: require('res/images/ic_top_up.png'),
+    title: 'Top-up account',
+    desc: 'Deposit money to your account to use with card',
+    isHaveSwitch: false,
+    isEnable: false,
+  },
+  {
+    icon: require('res/images/ic_limit.png'),
+    title: 'Weekly spending limit',
+    descDisable: 'You haven’t set any spending limit on card',
+    descEnable: 'You haven’t set any spending limit on card',
+    isHaveSwitch: true,
+    isEnable: true,
+    navigation: 'SpendingLimit',
+  },
+  {
+    icon: require('res/images/ic_freeze.png'),
+    title: 'Freeze card',
+    descDisable: 'Your debit card is currently deactivate',
+    descEnable: 'Your debit card is currently active',
+    isHaveSwitch: true,
+    isEnable: true,
+  },
+  {
+    icon: require('res/images/ic_new_card.png'),
+    title: 'Get a new card',
+    desc: 'This deactivates your current debit card',
+    isHaveSwitch: false,
+    isEnable: false,
+  },
+  {
+    icon: require('res/images/ic_deactive.png'),
+    title: 'Deactivated cards',
+    desc: 'Your previously deactivated cards',
+    isHaveSwitch: false,
+    isEnable: false,
+  },
+];

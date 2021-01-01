@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DebitCard should render DebitCard with show information 1`] = `
+<View
+  style={Object {}}
+>
+  <ForwardRef
+    onPress={[Function]}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 6,
+        "borderTopRightRadius": 6,
+        "flexDirection": "row",
+        "height": 44,
+        "justifyContent": "center",
+        "marginBottom": -10,
+        "marginRight": 24,
+        "paddingHorizontal": 12,
+        "paddingTop": 8,
+      }
+    }
+  >
+    <AspireImage
+      source={null}
+      style={
+        Object {
+          "marginRight": 6,
+        }
+      }
+    />
+    <AspireText
+      color="#01D167"
+      isBold={true}
+      size={12}
+      text="Show card number"
+      textStyle={
+        Object {
+          "marginBottom": 24,
+        }
+      }
+    />
+  </ForwardRef>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#01D167",
+        "borderRadius": 10,
+        "height": 220,
+        "marginHorizontal": 24,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginLeft": 24,
+          "marginTop": 70,
+        }
+      }
+    >
+      <AspireText
+        color="#FFFFFF"
+        id="text_name"
+        isBold={true}
+        size={22}
+        text="Jasper Tran"
+        textStyle={
+          Object {
+            "marginBottom": 24,
+          }
+        }
+      />
+      <FlatList
+        data={
+          Array [
+            "1234",
+            "1234",
+            "1234",
+            "1234",
+          ]
+        }
+        disableVirtualization={false}
+        horizontal={true}
+        initialNumToRender={10}
+        keyExtractor={[Function]}
+        maxToRenderPerBatch={10}
+        numColumns={1}
+        onEndReachedThreshold={2}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        updateCellsBatchingPeriod={50}
+        windowSize={21}
+      />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <AspireText
+          color="#FFFFFF"
+          isBold={true}
+          size={13}
+          text="Thru: 12/2022"
+        />
+        <CVVNumberItem
+          cvv="123"
+          isHideInfo={true}
+        />
+      </View>
+    </View>
+    <AspireImage
+      source={null}
+      style={
+        Object {
+          "position": "absolute",
+          "right": 24,
+          "top": 24,
+        }
+      }
+    />
+    <AspireImage
+      source={null}
+      style={
+        Object {
+          "bottom": 24,
+          "position": "absolute",
+          "right": 24,
+        }
+      }
+    />
+  </View>
+</View>
+`;
